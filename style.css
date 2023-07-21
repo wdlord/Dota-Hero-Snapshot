@@ -1,0 +1,164 @@
+/* Colors: - https://coolors.co/palette/11151c-212d40-364156-7d4e57-d66853 */
+
+html {
+    height: 100%;
+    width: 100%;;
+    color: white;
+    background-color: #11131c;
+    background-image: url("patterns/herringbone.png");
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Crimson Text', serif;
+    margin: 0;
+}
+
+.items h3 {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+    max-width: 800px;
+    box-shadow: #0f1217 0px 0px 100px;
+    background-color: #11151C;
+    background-image: url("patterns/concrete.webp"), url("patterns/concrete.webp");
+    background-blend-mode: overlay;
+    box-sizing: border-box;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.name-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    background-color: #11151C;
+    padding: 10px;
+    width: 470px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#attribute {
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#hero-name {
+    font-family: 'Philosopher', serif;
+    font-size: 26px;
+    margin: 0;
+}
+
+.hero-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #11151C;
+    box-shadow: #11151C 2px 2px 5px;
+    margin: 15px;
+}
+
+.hero-image-container h3 {
+    padding: 8px;
+}
+
+#hero-image {
+    min-width: 256px;
+}
+
+hr {
+    width: 470px;
+    max-width: 85%;
+    color: #212D40;
+}
+
+.items {
+    max-width: 90%;
+}
+
+.item-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
+    padding-bottom: 10px;
+}
+
+.item-row img {
+    flex-shrink: 1;
+    min-width: 0;
+    min-height: 0;
+    margin: 3px;
+    box-sizing: border-box;
+    box-shadow: #11151C 1px 1px 3px;
+}
+
+form {
+    margin-top: 15px;
+    width: 200px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+}
+
+.buttons input[type=button] {
+    font-size: 16px;
+    width: 85px;
+    padding: 5px;
+    background-color: #11151C;
+    color: white;
+    border: none;
+    border-radius: 5vmin;
+}
+
+.buttons input[type=button]:hover {
+    background-color: #D66853;
+    color: #11151C;
+}
+
+input[type=text] {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    border: none;
+    border-radius: 5vmin;
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        border-left: 2px solid #364156;
+        border-right: 2px solid #364156;
+    }
+
+    .items h3 {
+        font-size: 18px;
+    }
+    
+}

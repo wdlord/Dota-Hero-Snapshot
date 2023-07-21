@@ -1,0 +1,75 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota Hero Snapshot</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato:wght@100;300&family=Philosopher&display=swap" rel="stylesheet">
+    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- <h1>Dota 2 Hero Snapshot</h1> -->
+    
+    <!-- Hero Display Section -->
+    <div class="hero">
+        <div class="name-container">
+            <img id="attribute" src="images/universal.webp">
+            <h1 id="hero-name">Hero Name</h1>
+        </div>
+
+        <div class="hero-image-container">
+            <img id="hero-image" src="">
+            <h3 id="winrate">Winrate: </h3>
+        </div>
+    </div>
+
+    <hr>
+    <h2>Popular Items</h2>
+    <div class="items">
+        
+        <h3>Early Game</h3>
+        <div id="early-game" class="item-row">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+        </div>
+        
+        <h3>Mid Game</h3>
+        <div id="mid-game" class="item-row">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+        </div>
+        
+        <h3>Late Game</h3>
+        <div id="late-game" class="item-row">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+        </div>
+    </div>
+
+    <!-- Name Form -->
+    <form onSubmit="SearchHero(); return false;">
+        <input type="text" id="hero-search" name="hero-search" placeholder="Hero Name">
+        <div class="buttons">
+            <input type="button" value="Search" name="submit" onclick="SearchHero()">
+            <input type="button" value="Random" name="random" onclick="RandomHero()" formnovalidate>
+        </div>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
